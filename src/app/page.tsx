@@ -33,7 +33,7 @@ export default function Home() {
         </p>
       </section>
       <FeatureSection />
-      <section className="mx-auto mt-24 max-w-6xl px-8">
+      <section className="mx-auto mt-28 max-w-6xl px-8">
         <div className=" grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <MetricCard label="CPU Savings" value={data.cpuSavings} />
           <MetricCard label="GPU Utilization" value={data.gpuUtilization} />

@@ -4,11 +4,13 @@ import { motion } from 'framer-motion';
 
 type CloudProviderProps = {
   name: string;
+  badge: string;
   direction?: 'left' | 'center' | 'right';
 };
 
 export default function CloudProvider({
   name,
+  badge,
   direction = 'center',
 }: CloudProviderProps) {
   const x = direction === 'left' ? -40 : direction === 'right' ? 40 : 0;
@@ -21,6 +23,7 @@ export default function CloudProvider({
       transition={{ duration: 0.5 }}
       className="mx-auto w-48 rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-center"
     >
+      <div className="mb-2 text-2xl">{badge}</div>
       <h3 className="text-lg font-semibold">{name}</h3>
     </motion.div>
   );
