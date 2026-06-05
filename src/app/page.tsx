@@ -17,8 +17,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <h1 className="mb-8 text-4xl font-bold">Atomity Cloud Orchestrator</h1>
-      <section className="mx-auto mt-32 max-w-6xl p-8">
+      <section className="mx-auto  max-w-6xl px-8 pt-20">
         <p className="mb-3 text-sm uppercase tracking-widest text-blue-400">
           Multi-Cloud Optimization
         </p>

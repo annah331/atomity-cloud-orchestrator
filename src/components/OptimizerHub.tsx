@@ -5,13 +5,10 @@ import { motion } from 'framer-motion';
 export default function OptimizerHub() {
   return (
     <div className="relative flex items-center justify-center">
-      <div className="absolute -top-6 h-3 w-3 rounded-full bg-blue-400" />
-      <div className="absolute -left-6 h-3 w-3 rounded-full bg-cyan-400" />
-      <div className="absolute -right-6 h-3 w-3 rounded-full bg-blue-400" />
       <motion.div
         animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.05, 0.2] }}
         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute h-72 w-72 rounded-full border border-blue-500/20"
+        className="absolute h-64 w-64 rounded-full border border-blue-500/20"
       />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
