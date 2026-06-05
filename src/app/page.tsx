@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <h1 className="mb-8 text-4xl font-bold">Atomity Cloud Orchestrator</h1>
-      <section className="mx-auto max-w-6xl px-8 pt-20">
+      <section className="mx-auto mt-32 max-w-6xl p-8">
         <p className="mb-3 text-sm uppercase tracking-widest text-blue-400">
           Multi-Cloud Optimization
         </p>
@@ -33,14 +33,19 @@ export default function Home() {
         </p>
       </section>
       <FeatureSection />
-      <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <MetricCard label="CPU Savings" value={data.cpuSavings} />
-        <MetricCard label="GPU Utilization" value={data.gpuUtilization} />
-        <MetricCard label="Storage Efficiency" value={data.storageEfficiency} />
-        <MetricCard
-          label="Network Performance"
-          value={data.networkPerformance}
-        />
+      <section className="mx-auto mt-24 max-w-6xl px-8">
+        <div className=" grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <MetricCard label="CPU Savings" value={data.cpuSavings} />
+          <MetricCard label="GPU Utilization" value={data.gpuUtilization} />
+          <MetricCard
+            label="Storage Efficiency"
+            value={data.storageEfficiency}
+          />
+          <MetricCard
+            label="Network Performance"
+            value={data.networkPerformance}
+          />
+        </div>
       </section>
     </main>
   );

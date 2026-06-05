@@ -3,13 +3,13 @@ import OptimizerHub from './OptimizerHub';
 
 export default function FeatureSection() {
   return (
-    <section className="mx-auto mt-20 max-w-6xl px-8">
+    <section className="mx-auto mt-24 max-w-6xl px-8">
       <div className="grid gap-6 md:grid-cols-3">
-        <CloudProvider name="AWS" />
-        <CloudProvider name="Azure" />
-        <CloudProvider name="Google Cloud" />
+        <CloudProvider name="AWS" direction="left" />
+        <CloudProvider name="Azure" direction="center" />
+        <CloudProvider name="Google Cloud" direction="right" />
       </div>
-      <div className="mt-12">
+      <div className="mt-16 flex justify-center">
         <OptimizerHub />
       </div>
     </section>
