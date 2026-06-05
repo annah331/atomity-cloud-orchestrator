@@ -23,9 +23,9 @@ export default function Home() {
           Multi-Cloud Optimization
         </p>
 
-        <h1 className="max-w-3xl text-5xl font-bold">
+        <h3 className="max-w-3xl text-5xl font-semibold">
           Orchestrate workloads across cloud providers intelligently.
-        </h1>
+        </h3>
 
         <p className="mt-6 max-w-2xl text-white/70">
           Monitor utilization, optimize costs, and improve resource allocation
@@ -35,15 +35,21 @@ export default function Home() {
       <FeatureSection />
       <section className="mx-auto mt-28 max-w-6xl px-8">
         <div className=" grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <MetricCard label="CPU Savings" value={data.cpuSavings} />
-          <MetricCard label="GPU Utilization" value={data.gpuUtilization} />
+          <MetricCard label="CPU Savings" value={data.cpuSavings} delay={0} />
+          <MetricCard
+            label="GPU Utilization"
+            value={data.gpuUtilization}
+            delay={0.1}
+          />
           <MetricCard
             label="Storage Efficiency"
             value={data.storageEfficiency}
+            delay={0.2}
           />
           <MetricCard
             label="Network Performance"
             value={data.networkPerformance}
+            delay={0.3}
           />
         </div>
       </section>
