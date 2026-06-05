@@ -1,5 +1,6 @@
 'use client';
 
+import FeatureSection from '../components/FeatureSection';
 import MetricCard from '../components/MetricCard';
 import { useCloudMetrics } from '../hooks/useCloudMetrics';
 
@@ -31,6 +32,7 @@ export default function Home() {
           across your cloud infrastructure.
         </p>
       </section>
+      <FeatureSection />
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <MetricCard label="CPU Savings" value={data.cpuSavings} />
         <MetricCard label="GPU Utilization" value={data.gpuUtilization} />
