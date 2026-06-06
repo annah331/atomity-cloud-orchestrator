@@ -1,10 +1,12 @@
+'use client';
+
 import CloudProvider from './CloudProvider';
 import OptimizerHub from './OptimizerHub';
 
 export default function FeatureSection() {
   return (
-    <section className="mx-auto mt-24 max-w-6xl px-8 space-y-16">
-      <div className="mb-12 text-center">
+    <section className="mx-auto mt-32 max-w-4xl px-8">
+      <div className="mb-16 text-center">
         <p className="text-sm uppercase tracking-widest text-blue-400">
           Orchestration Layer
         </p>
@@ -14,15 +16,13 @@ export default function FeatureSection() {
         </h2>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        <CloudProvider name="AWS" badge="☁️" direction="left" />
-
-        <CloudProvider name="Azure" badge="🔷" direction="center" />
-
-        <CloudProvider name="Google Cloud" badge="🌐" direction="right" />
+      <div className="flex flex-wrap justify-center gap-6">
+        <CloudProvider name="AWS" badge="☁️" />
+        <CloudProvider name="Azure" badge="🔷" />
+        <CloudProvider name="Google Cloud" badge="🌐" />
       </div>
 
-      <div className="mt-16 flex justify-center">
+      <div className="mt-24 flex justify-center pb-40">
         <OptimizerHub />
       </div>
     </section>
