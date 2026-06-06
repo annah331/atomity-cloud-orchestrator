@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atomity Cloud Orchestrator
 
-## Getting Started
+A frontend engineering challenge project built for Atomity.  
+This application simulates a cloud optimization dashboard that visualizes multi-cloud performance, providers, and optimization insights in a structured UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Add your Vercel link here]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 GitHub Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[https://github.com/annah331/atomity-cloud-orchestrator]
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Project Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project focuses on building a clean, structured, and responsive frontend dashboard that represents a multi-cloud optimization system.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The goal was not only visual design, but also:
 
-## Deploy on Vercel
+- clear component separation
+- logical UI hierarchy
+- scalable layout structure
+- clean state/data flow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 My Approach
+
+I approached the challenge by first breaking the UI into logical systems rather than screens:
+
+### 1. UI Structure Thinking
+
+I divided the interface into 3 core layers:
+
+- **Optimizer Hub** → central system representation
+- **Metrics Section** → performance indicators
+- **Cloud Providers** → external systems visualization
+
+This helped ensure clarity and scalability of the layout.
+
+---
+
+### 2. Component-Based Design
+
+Each UI section was built as an independent component:
+
+- `OptimizerHub`
+- `MetricCard`
+- `CloudProvider`
+- `Providers`
+- `FeatureSection`
+
+This keeps the system modular and reusable.
+
+---
+
+### 3. State & Data Handling
+
+A custom hook (`useCloudMetrics`) manages data flow and simulates cloud metrics logic in a clean, isolated way.
+
+Utility files were separated into:
+
+- `/lib` for API and query logic
+- `/hooks` for reusable state logic
+
+---
+
+### 4. Design Decisions
+
+I focused on:
+
+- clear visual hierarchy
+- minimal but functional UI
+- strong spacing and alignment
+- readability over visual noise
+
+Some decorative text elements were intentionally reduced to improve clarity of the interface.
+
+---
+
+## ⚙️ Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules / Tailwind
+
+---
+
+## 📌 Key Features
+
+- Multi-cloud dashboard layout
+- Central optimization hub visualization
+- Metrics-based UI cards
+- Cloud provider section
+- Modular reusable components
+- Responsive frontend structure
+
+---
+
+## 🧩 What I Would Improve Next
+
+Given more time, I would:
+
+- add real API integration for live cloud data
+- improve animation transitions between metrics
+- enhance responsiveness for ultra-wide screens
+- add deeper analytics visualization (charts/graphs)
+
+---
+
+## 🧠 What This Project Demonstrates
+
+This project demonstrates:
+
+- ability to break down complex UI systems
+- structured component architecture thinking
+- clean frontend organization
+- attention to usability and hierarchy
+- ability to complete a full working UI system within a time constraint
+
+---
+
+Thank you for reviewing my submission.
