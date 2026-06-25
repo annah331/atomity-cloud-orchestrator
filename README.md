@@ -125,4 +125,3 @@ This project demonstrates:
 
 ---
 
-Thank you for reviewing my submission.
